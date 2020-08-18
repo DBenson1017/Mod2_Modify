@@ -1,0 +1,16 @@
+<h1>Welcome to Modify!</h1>
+<h2>Hello <%=@user.name%>!</h2>
+
+<% @user.playlists.each do |p|%>
+<p><%=link_to p.name, playlist_path(p)%></p>
+<%end%>
+
+
+
+
+<%= form_with(url: "/users", method: 'get') do%>
+     <%= label_tag(:q, "Search for songs:") %>
+     <%= text_field_tag(:q) %>
+     <%= submit_tag("search")%>
+ <% end %>
+
