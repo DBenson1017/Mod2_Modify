@@ -1,12 +1,14 @@
+require 'byebug'
+
 class SongsController < ApplicationController
 
     def index
         if params[:search] == nil
-            "the page loaded without a search"
+            #does nothing
         else params[:search]
         @songs = Song.search(params[:search])
         end 
-      
+        Song.top_five
     end 
         
 
