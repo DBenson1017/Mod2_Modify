@@ -2,9 +2,9 @@ class SongPlaylistsController < ApplicationController
 
     def new 
         @song_playlist = SongPlaylist.new
-
         @songs = Song.all
         @playlist = Playlist.all
+        @song_id = params[:id]
     end 
 
  

@@ -20,6 +20,7 @@ class SongsController < ApplicationController
 
     def show 
         @track = Song.find(params[:id])
+        @song_playlist = SongPlaylist.new 
     end 
 
     private 
