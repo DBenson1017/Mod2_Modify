@@ -1,0 +1,13 @@
+<h1>Add Song to Playlist</h1>
+
+<%=form_for @song_playlist do |f|%>
+
+<%= f.label :playlist %>
+<%= f.collection_select :playlist_id, Playlist.all, :id, :name %> 
+
+<%= f.label :song %>
+<%= f.collection_select :song_id, Song.all, :id, :name %> 
+
+<%= f.submit %>
+
+<% end %>

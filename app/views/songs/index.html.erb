@@ -7,13 +7,14 @@
      <%= text_field_tag(:search, params[:search]) %>
      <%= submit_tag("search")%>
  <% end %>
+ 
+
+<%search = @tracks.last(5)%>
+<%search.each do |s|%>
+<p><%=link_to s.name, song_path(s.id)%></p>
+<%end%>
 
 
-<%if @songs %>
-<%@songs.first(5).each do |s|%>
-<p><%= s.name%>; <%=s.artists.map {|a| a.name} %></p>
-<%end%>
-<%else%>
-<p><%='Please enter your search above.'%></p>
-<%end%>
+
+
 

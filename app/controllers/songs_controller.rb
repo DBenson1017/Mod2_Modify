@@ -9,6 +9,7 @@ class SongsController < ApplicationController
         @songs = Song.search(params[:search])
         end 
         Song.top_five
+        @tracks  = Song.all
     end 
         
 
@@ -17,7 +18,8 @@ class SongsController < ApplicationController
         redirect_to new_search_path 
     end 
 
-    def search_params
+    def show 
+        @track = Song.find(params[:id])
     end 
 
     private 
