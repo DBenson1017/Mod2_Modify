@@ -1,13 +1,32 @@
-<h1>New Playlist Form</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Creator</title>
+    <link rel="stylesheet" href="app/assets/stylesheets/playlists.scss">
+</head>
+<body>
+    <div class="playlist-container">
+        <div class="playlist-wrapper">
+            <h1>New Playlist Form</h1>
 
-<%=form_for @playlist do |f|%>
+            <%=form_for @playlist do |f|%>
 
-<%= f.label :name %>
-<%= f.text_field :name %> 
+            <%= f.label :name %>
+            <%= f.text_field :name %> 
 
-<%= f.label :user %>
-<%= f.collection_select :user_id, User.all, :id, :name %> 
+            <%= f.label :user %>
+            <%= f.collection_select :user_id, User.all, :id, :name %> 
 
-<%= f.submit %>
+            <%= f.submit %>
 
-<% end %>
+        <% end %>
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>
+
