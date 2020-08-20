@@ -32,10 +32,24 @@
     display: flex;
     justify-content: center;
     background-color: var(--yellow);
+    overflow: auto;
 }
 
-.playlist-wrapper {
+.playlist-show-wrapper {
     align-self: center;
+   
+}
+
+.playlist-show-song-name {
+    // display: flex;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--yellow);
+}
+
+
+
+.text-wrapper {
+    
 }
 
 .create-playlist-button {
@@ -62,4 +76,13 @@
     border-radius: 30px;
     font-weight: 400;
     color: white;
+}
+
+//  .playlist-image {
+//     position: relative;
+//     left: 30px;
+//  }
+
+h3 {
+    
 }

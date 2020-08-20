@@ -9,17 +9,31 @@
 <body>
     <div class="playlist-page-container">
 
-    <div class='playlist-image'>
-                <img src="<%=Song.all.sample.album.album_img%>" width="640" height="640"> 
-            </div>
-        <div class="playlist-wrapper">
-            <h1><%=@playlist.name%></h1>
-
-            <%=@playlist.name%>
+   
+        <div class="playlist-show-wrapper">
             
-            <%@playlist.songs.each do |s|%>
-            <p><%= s.name%></p>
-            <%end%>
+            <div class='playlist-image'>
+                <img src="<%=Song.all.sample.album.album_img%>" width="640" height="640"> 
+            </div> 
+
+
+            <div class="text-wrapper">
+
+                <h1><%=@playlist.name%></h1>
+
+                <div class='playlist-show-song-name'>
+
+                <%@playlist.songs.each do |s|%>
+                <p><%=link_to s.name, song_path(s)%></p> 
+
+                <%end%>
+                </div>
+
+            </div>
+
+            <h3><%= link_to "Click here to go back to Search Page", songs_index_path %></h3>
+            
+
         </div>
     </div>
 

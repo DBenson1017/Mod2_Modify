@@ -4,12 +4,5 @@ class Playlist < ApplicationRecord
 
 
 
-# def self.photo(input) 
-#     if input.songs == nil 
-#         Song.all.sample.album.album_img 
-#     else 
-#     input.songs.sample.album.album_img
-#     end 
-# end 
 
 end

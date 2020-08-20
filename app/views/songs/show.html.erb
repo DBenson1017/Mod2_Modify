@@ -26,7 +26,7 @@
                     <%=form_for @song_playlist do |f|%>
 
                     <%= f.label :playlist %>
-                    <%= f.collection_select :playlist_id, Playlist.all, :id, :name %>
+                <%= f.collection_select :playlist_id, Playlist.all, :id, :name, {class: 'playlist-dropdown'}%>
 
                     <%= f.hidden_field :song_id, value: @track.id %>
 
