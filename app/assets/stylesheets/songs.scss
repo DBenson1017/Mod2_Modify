@@ -2,19 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+:root {
+    --yellow: #FFE818;
+    --blue: #A4C9D8;
+    --neon: #CDF567;
+    --red: #FF4935;
+    --grey: #E1E6E1;
+    --black: #000000;
+    --white: #FFFFFF;
+    
+}
+
 * {
     margin: 0;
 }
 
-.song-index-page-wrapper {
-    height: 100vh;
+
+.bottom-index-page-cntnr {
+    height: 50vh;
     display: flex;
     justify-content: center;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--blue);
+}
+
+
+.song-index-page-wrapper {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--neon);
 }
 
 .song-wrapper {
     align-self: center;
 }
+
 
 .song-show-page-container {
     height: 100vh;
@@ -22,6 +46,16 @@
     justify-content: center;
 }
 
+
 .song-show-page-wrapper {
     align-self: center; 
+}
+    
+
+.song-index-page-title {
+    padding-bottom: 50px;
+}
+
+.recent-searches {
+    
 }
