@@ -28,7 +28,8 @@ class Song < ApplicationRecord
           #info to initialize album  
           album_name = t.album.name
           date = t.album.release_date 
-          album = Album.create(name: album_name , release_date: date, album_img: nil, artist_id: artist.id ) 
+          img = t.album.images[0]["url"]
+          album = Album.create(name: album_name , release_date: date, album_img: img, artist_id: artist.id ) 
 
           #info to initialize song  
           @results <<  Song.create(name: t.name, album_id: album.id )

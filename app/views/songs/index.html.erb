@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app/assets/stylesheets/songs.scss">
     <title>Song Page</title>
 </head>
+
 <body>
 
     <div class="song-index-page-wrapper">
-       <div class="song-wrapper">
-            <div class="song-index-page-title"><h1>Start by finding songs you love. </h1></div>
+        <div class="song-wrapper">
+            <div class="song-index-page-title">
+                <h1>Start by finding songs you love. </h1>
+            </div>
 
-            <%= form_tag(songs_path , :method => 'get') do%>
-                <%= label_tag(:q, "Search by song title:") %>
-                <%= text_field_tag(:search, params[:search]) %>
-                <%= submit_tag("search")%>
-            <% end %>
-            
-       </div>
-       
-    </div> 
-    
-    <div class="bottom-index-page-cntnr">
+            <div class='search-nav'>
 
-            <p><%= "Modify users most recent songs:"%></p>
-           
-        <div class="recent-searches">
+                <%= form_tag(songs_path , :method => 'get') do%>
+                <%= label_tag(:q, "Search by song title:", class: 'search-title') %>
+                <%= text_field_tag(:search, params[:search], class: 'search-bar')  %>
+                <%= submit_tag("Search", class: 'search-button')%>
+                <% end %>
 
-            <%search = @tracks.last(5)%>
-            <%search.each do |s|%>
-            <p><%=link_to s.name, song_path(s.id)%>; <%=s.album.artist.name%></p>
-            <%end%>
+            </div>
 
-        </div>   
-            
+
+        </div>
 
     </div>
- 
+
+    
+
+    <div class="bottom-index-page-cntnr">
+        
+        <div class='bottom-index-wrapper'>
+            
+            <p><%= "Modify users most recent songs:"%></p>
+
+            <div class="recent-searches">
+
+                <%search = @tracks.last(5)%>
+                <%search.each do |s|%>
+                <p><%=link_to s.name, song_path(s.id)%></p>
+                <p><%=s.album.artist.name%><p>
+                <%end%>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-

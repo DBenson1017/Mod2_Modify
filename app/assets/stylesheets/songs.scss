@@ -10,7 +10,8 @@
     --grey: #E1E6E1;
     --black: #000000;
     --white: #FFFFFF;
-    
+    --sp-green: #1DB954;
+    --sp-hover-green: #1ED760;
 }
 
 * {
@@ -44,6 +45,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: var(--yellow);
 }
 
 
@@ -56,6 +58,97 @@
     padding-bottom: 50px;
 }
 
+
+
+.song-index-page-title > h1{
+    font-size: 80px;
+}
+.search-title {
+    display: none;
+}
+
+.search-bar {
+    width: 500px;
+    height: 35px;
+    border-radius: 30px;
+}
+
+.search-nav {
+    margin-left: 20%;
+}
+
+.search-button {
+    background-color: none;
+    border: none;
+    font-size: 1em;
+    background-color: var(--sp-green);
+    height: 41px;
+    width: 130px;
+    margin-left: 2px;
+    border-radius: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.search-button:hover {
+    background-color: var(--sp-hover-green);
+    border: 2px solid white;
+}
+
+.bottom-index-page-cntnr > p {
+    font-size: 2rem;
+}
+
 .recent-searches {
     
 }
+
+.track-name {
+    font-size: 60px;
+
+}
+
+
+.artist-name {
+    font-size: 50px;
+
+}
+
+.album-name {
+    font-size: 40px;
+
+}
+
+.artist-image {
+    
+}
+
+.bottom-index-wrapper {
+    
+}
+
+.add-to-playlist {
+  background-color: var(--sp-green);
+  border: none;
+  color: var(--white);
+//   padding: 15px 32px;
+//   text-align: center;
+//   text-decoration: none;
+//   font-size: 16px;
+  height: 20px; 
+  width: 130px; 
+  border-radius: 50px 
+}
+
+.add-to-playlist:hover {
+    background-color: var( --sp-hover-green);
+    border: none;
+    color: var(--white);
+  //   padding: 15px 32px;
+  //   text-align: center;
+  //   text-decoration: none;
+  //   font-size: 16px;
+    height: 20px; 
+    width: 130px; 
+    border-radius: 50px 
+  }
