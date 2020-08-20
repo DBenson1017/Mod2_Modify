@@ -20,6 +20,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: var(--blue);
 }
 
 .playlist-wrapper {
@@ -30,8 +31,35 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: var(--yellow);
 }
 
 .playlist-wrapper {
     align-self: center;
+}
+
+.create-playlist-button {
+    background-color: none;
+    border: none;
+    font-size: 1em;
+    background-color: var(--sp-green);
+    height: 41px;
+    width: 130px;
+    margin-left: 2px;
+    border-radius: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.create-playlist-button:hover {
+    background-color: none;
+    border: none;
+    font-size: 1em;
+    background-color: var(--sp-hover-green);
+    height: 41px;
+    width: 130px;
+    margin-left: 2px;
+    border-radius: 30px;
+    font-weight: 400;
+    color: white;
 }

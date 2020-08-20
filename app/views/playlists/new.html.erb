@@ -9,7 +9,7 @@
 <body>
     <div class="playlist-container">
         <div class="playlist-wrapper">
-            <h1>New Playlist Form</h1>
+            <h1>Give your playlist a name!</h1>
 
             <%=form_for @playlist do |f|%>
 
@@ -19,7 +19,7 @@
             <%= f.label :user %>
             <%= f.collection_select :user_id, User.all, :id, :name %> 
 
-            <%= f.submit %>
+            <%= submit_tag("Create Playlist", class: 'create-playlist-button')%>
 
         <% end %>
         </div>

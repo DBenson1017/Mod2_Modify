@@ -2,6 +2,11 @@ class PlaylistsController < ApplicationController
 
     def show 
         @playlist = Playlist.find(params[:id])
+
+        # pic = Playlist.photo(@playlist)
+       
+    
+
     end 
 
     def new 

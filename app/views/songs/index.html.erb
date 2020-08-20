@@ -37,14 +37,14 @@
         
         <div class='bottom-index-wrapper'>
             
-            <p><%= "Modify users most recent songs:"%></p>
+            <p><%= "Most recent songs searches:"%></p>
 
             <div class="recent-searches">
 
                 <%search = @tracks.last(5)%>
                 <%search.each do |s|%>
-                <p><%=link_to s.name, song_path(s.id)%></p>
-                <p><%=s.album.artist.name%><p>
+                <p id='track-name'><%=link_to s.name, song_path(s.id)%></p>
+                <p id='artist-name'><%=s.album.artist.name%><p>
                 <%end%>
 
             </div>

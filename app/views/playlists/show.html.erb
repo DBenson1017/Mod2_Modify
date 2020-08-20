@@ -10,7 +10,7 @@
     <div class="playlist-page-container">
 
     <div class='playlist-image'>
-                <img src="<%= @playlist.songs.sample.album.album_img%>" width="640" height="640"> 
+                <img src="<%=Song.all.sample.album.album_img%>" width="640" height="640"> 
             </div>
         <div class="playlist-wrapper">
             <h1><%=@playlist.name%></h1>

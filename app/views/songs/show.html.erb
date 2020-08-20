@@ -12,7 +12,7 @@
     <div class="song-show-page-container">
         <div class="song-show-page-wrapper">
             <div class='track-name'>
-                <h1><%=@track.name%></h1>
+            <h1><%=@track.name%></h1>
             </div>
             <div class='artist-name'>
                 <p>By: <%=@track.album.artist.name%></p>
@@ -21,16 +21,21 @@
                 <p>Presented on: <%=@track.album.name%></p>
             </div>
 
-            <%=form_for @song_playlist do |f|%>
+                <div class="add-to-playlist-form">
 
-            <%= f.label :playlist %>
-            <%= f.collection_select :playlist_id, Playlist.all, :id, :name %>
+                    <%=form_for @song_playlist do |f|%>
 
-            <%= f.hidden_field :song_id, value: @track.id %>
+                    <%= f.label :playlist %>
+                    <%= f.collection_select :playlist_id, Playlist.all, :id, :name %>
 
-           <%= f.submit "Add song to playlist", class: 'add-to-playlist' %>
+                    <%= f.hidden_field :song_id, value: @track.id %>
 
-            <% end %>
+                    <div class="playlist-button-wrapper"><%=f.submit "Add song to playlist", class: 'add-to-playlist'%></div>
+
+                    <% end %>
+                    
+                </div>
+                            
 
             <div class='artist-image'>
                 <img src="<%= @track.album.album_img%>" width="640" height="640"> 
