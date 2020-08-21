@@ -10,8 +10,15 @@
 
 <body>
 
+
+<div class="master-container">
+
+    <button id="create-button"><%= link_to "Create A Playlist", new_playlist_path %></button>
+
     <div class="song-index-page-wrapper">
         <div class="song-wrapper">
+            
+         
             <div class="song-index-page-title">
                 <h1>Start by finding songs you love. </h1>
             </div>
@@ -26,6 +33,7 @@
 
             </div>
 
+            
 
         </div>
 
@@ -50,12 +58,13 @@
             </div>
 
         </div>
-        
-        <button><%= link_to "Create A Playlist", new_playlist_path %></button>
+
+       
 
     </div>
 
-
+    
+</div>  
 </body>
 
 </html>

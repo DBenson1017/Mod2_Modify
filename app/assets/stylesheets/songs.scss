@@ -19,6 +19,12 @@
     margin: 0;
 }
 
+.master-container {
+    height: 100vh;
+    background-color: var(--yellow)
+    
+}
+
 
 .bottom-index-page-cntnr {
     height: 50vh;
@@ -48,6 +54,7 @@
     justify-content: center;
     background-color: var(--yellow);
     font-family: 'Lato', sans-serif;
+    
 }
 
 
@@ -147,8 +154,31 @@
     padding-bottom: 20px;
 }
 
-.artist-image {
+#create-button {
+    background-color: none;
+    border: none;
+    font-size: 1em;
+    background-color: var(--sp-green);
+    height: 41px;
+    width: 150px;
+    margin-left: 2px;
+    border-radius: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;   
+}
 
+#create-button:hover {
+    background-color: var(--sp-hover-green);
+    border: 2px solid white;
+}
+
+#create-button > a {
+    text-decoration: none;
+    color: white;
 }
 
 .playlist-button-wrapper {

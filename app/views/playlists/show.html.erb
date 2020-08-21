@@ -23,16 +23,16 @@
 
                 <div class='playlist-show-song-name'>
 
-                <%@playlist.songs.each do |s|%>
-                <p><%=link_to s.name, song_path(s)%></p> 
+                    <%@playlist.songs.each do |s|%>
+                    <p><%=link_to s.name, song_path(s)%></p> 
 
-                <%end%>
+                    <%end%>
+
                 </div>
 
             </div>
 
-            <h3><%= link_to "Click here to go back to Search Page", songs_index_path %></h3>
-            
+            <div class="back-button"><h3><%= link_to "Click here to go back to Search Page", songs_index_path %></h3></div> 
 
         </div>
     </div>

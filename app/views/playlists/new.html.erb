@@ -9,19 +9,26 @@
 <body>
     <div class="playlist-container">
         <div class="playlist-wrapper">
+
             <h1>Give your playlist a name!</h1>
 
-            <%=form_for @playlist do |f|%>
+        <div class="form-wrap">
 
-            <%= f.label :name %>
-            <%= f.text_field :name %> 
+                <%=form_for @playlist do |f|%>
 
-            <%= f.label :user %>
-            <%= f.collection_select :user_id, User.all, :id, :name %> 
+                <%= f.label :name, class: 'name-title' %>
+                <%= f.text_field :name, class: 'name-bar' %> 
 
-            <%= submit_tag("Create Playlist", class: 'create-playlist-button')%>
+                <%= f.label :user, class: 'user-title' %>
+                <%= f.collection_select :user_id, User.all, :id, :name %> 
 
-        <% end %>
+                <%= submit_tag("Create Playlist", class: 'create-playlist-button')%>
+
+                <% end %>
+
+        </div>
+
+        
         </div>
         
     </div>
