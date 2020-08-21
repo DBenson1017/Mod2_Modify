@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+  get 'home/index'
   resources :users
   resources :playlists
   resources :song_playlists
   resources :songs
   resources :albums
   resources :artists
+  
+  root "home#index"
 
   get "/songs", to: "songs#index", as: "songs_index"
   

@@ -23,26 +23,31 @@
     height: 100vh;
     // background-color: var(--yellow)
     animation: 10000ms ease-in-out infinite color-change;
-   
+
     @keyframes color-change {
-      0% {
-        background-color: var(--blue);
-      }
-      20% {
-        background-color: var(--yellow);
-      }
-      40% {
-        background-color: var(--red);
-      }
-      60% {
-        background-color: var(--orange);
-      }
-      80% {
-        background-color: var(--neon);
-      }
-      100% {
-        background-color: var(--blue);
-      }
+        0% {
+            background-color: var(--blue);
+        }
+
+        20% {
+            background-color: var(--yellow);
+        }
+
+        40% {
+            background-color: var(--red);
+        }
+
+        60% {
+            background-color: var(--orange);
+        }
+
+        80% {
+            background-color: var(--neon);
+        }
+
+        100% {
+            background-color: var(--blue);
+        }
     }
 
 }
@@ -77,26 +82,31 @@
     // background-color: var(--yellow);
     font-family: 'Lato', sans-serif;
     animation: 10000ms ease-in-out infinite color-change;
-   
+
     @keyframes color-change {
-      0% {
-        background-color: var(--blue);
-      }
-      20% {
-        background-color: var(--yellow);
-      }
-      40% {
-        background-color: var(--red);
-      }
-      60% {
-        background-color: var(--orange);
-      }
-      80% {
-        background-color: var(--neon);
-      }
-      100% {
-        background-color: var(--blue);
-      }
+        0% {
+            background-color: var(--blue);
+        }
+
+        20% {
+            background-color: var(--yellow);
+        }
+
+        40% {
+            background-color: var(--red);
+        }
+
+        60% {
+            background-color: var(--orange);
+        }
+
+        80% {
+            background-color: var(--neon);
+        }
+
+        100% {
+            background-color: var(--blue);
+        }
     }
 }
 
@@ -116,35 +126,38 @@
     animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
     @-webkit-keyframes text-focus-in {
-    0% {
-    -webkit-filter: blur(12px);
-        filter: blur(12px);
-    opacity: 0;
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
     }
-    100% {
-    -webkit-filter: blur(0px);
-        filter: blur(0px);
-    opacity: 1;
-    }
-    }
+
     @keyframes text-focus-in {
-    0% {
-    -webkit-filter: blur(12px);
-        filter: blur(12px);
-    opacity: 0;
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
     }
-    100% {
-    -webkit-filter: blur(0px);
-        filter: blur(0px);
-    opacity: 1;
-    }
-    }
-    
+
 }
 
 
 .song-index-page-title {
-    padding-bottom: 50px;       
+    padding-bottom: 50px;
 }
 
 
@@ -155,30 +168,33 @@
     animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
     @-webkit-keyframes text-focus-in {
-    0% {
-    -webkit-filter: blur(12px);
-        filter: blur(12px);
-    opacity: 0;
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
     }
-    100% {
-    -webkit-filter: blur(0px);
-        filter: blur(0px);
-    opacity: 1;
-    }
-    }
+
     @keyframes text-focus-in {
-    0% {
-    -webkit-filter: blur(12px);
-        filter: blur(12px);
-    opacity: 0;
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
     }
-    100% {
-    -webkit-filter: blur(0px);
-        filter: blur(0px);
-    opacity: 1;
-    }
-    }
-  
+
 
 }
 
@@ -228,51 +244,54 @@
     animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
     @-webkit-keyframes text-focus-in {
-    0% {
-    -webkit-filter: blur(12px);
-        filter: blur(12px);
-    opacity: 0;
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
     }
-    100% {
-    -webkit-filter: blur(0px);
-        filter: blur(0px);
-    opacity: 1;
-    }
-    }
+
     @keyframes text-focus-in {
-    0% {
-    -webkit-filter: blur(12px);
-        filter: blur(12px);
-    opacity: 0;
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
     }
-    100% {
-    -webkit-filter: blur(0px);
-        filter: blur(0px);
-    opacity: 1;
-    }
-    }
-  
+
 }
 
 #artist-name {
     padding-bottom: 10px;
 }
 
-#artist-name > a {
+#artist-name>a {
     color: var(--neon);
 }
 
-#track-name > a {
+#track-name>a {
     text-decoration: none;
     font-weight: 500;
-    color: var(--orange);  
-    font-size: 20px;  
+    color: var(--orange);
+    font-size: 20px;
 }
 
-#track-name > a:hover {
+#track-name>a:hover {
     color: var(--black);
     text-decoration: underline;
-} 
+}
 
 .recent-searches {
     margin-top: 50px;
@@ -308,7 +327,7 @@
     color: white;
     position: absolute;
     top: 15px;
-    right: 15px;   
+    right: 15px;
 }
 
 #create-button:hover {
@@ -316,13 +335,13 @@
     border: 2px solid white;
 }
 
-#create-button > a {
+#create-button>a {
     text-decoration: none;
     color: white;
 }
 
 .playlist-button-wrapper {
-   padding-top: 10px;
+    padding-top: 10px;
 }
 
 .playlist-dropdown {

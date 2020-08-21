@@ -31,9 +31,10 @@
 
 .playlist-show-wrapper {
     align-self: center;
-    
+
 }
-.text-wrapper > h1 {
+
+.text-wrapper>h1 {
     margin-top: 9px;
     margin-bottom: 10px;
 }
@@ -49,12 +50,12 @@
     background-color: var(--yellow);
 }
 
-.playlist-show-song-name > p:hover {
+.playlist-show-song-name>p:hover {
     color: var(--black);
 }
 
 
-.playlist-show-song-name > p {
+.playlist-show-song-name>p {
     padding-bottom: 5px;
 }
 
@@ -77,8 +78,8 @@
     font-weight: 400;
     color: white;
     text-align: center;
-    
-    
+
+
 }
 
 .back-button:hover {
@@ -87,7 +88,7 @@
 }
 
 
- a {
+a {
     text-decoration: none;
     color: var(--black);
 }
@@ -124,37 +125,40 @@ a:hover {
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
     @-webkit-keyframes text-focus-in {
-    0% {
-    -webkit-filter: blur(12px);
-        filter: blur(12px);
-    opacity: 0;
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
     }
-    100% {
-    -webkit-filter: blur(0px);
-        filter: blur(0px);
-    opacity: 1;
-    }
-    }
+
     @keyframes text-focus-in {
-    0% {
-    -webkit-filter: blur(12px);
-        filter: blur(12px);
-    opacity: 0;
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
     }
-    100% {
-    -webkit-filter: blur(0px);
-        filter: blur(0px);
-    opacity: 1;
-    }
-    }
-  
+
 }
 
 .playlist-wrapper {
     align-self: center;
 }
 
-.playlist-wrapper > h1 {
+.playlist-wrapper>h1 {
     font-size: 7rem;
 
 }
@@ -162,7 +166,6 @@ a:hover {
 .form-wrap {
     margin-top: 40px;
     margin-left: 250px
-    
 }
 
 .name-title {
@@ -201,5 +204,5 @@ a:hover {
 
 .create-playlist-button:hover {
     border: 2px solid white;
-    background-color: var(--sp-hover-green); 
+    background-color: var(--sp-hover-green);
 }

@@ -7,6 +7,10 @@ gem 'dotenv-rails', :groups => [:development, :test] #:require => 'dotenv/rails-
 #gem that wraps spotify active record responses in Ruby  
 gem 'rspotify'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1', '>= 3.1.12'
+
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'

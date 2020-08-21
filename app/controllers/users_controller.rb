@@ -1,64 +1,74 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-def index
+  # GET /users
+  # GET /users.json
+  def index
     @users = User.all
-end
+  end
 
-def new
+  # GET /users/1
+  # GET /users/1.json
+  def show
+  end
+
+  # GET /users/new
+  def new
     @user = User.new
-end
+  end
 
-def create #add validation here 
-    @user = User.create(user_params)
+  # GET /users/1/edit
+  def edit
+  end
 
-    # if user.valid? 
-    #     session[:user_id] =  user.id
-    #     redirect_to user
-    #   else
-    #     flash[:errors] = user.errors.full_messages
-    #     redirect_to new_user_path
-    #   end 
-end 
+  # POST /users
+  # POST /users.json
+  def create
+    @user = User.new(user_params)
 
-def search 
-    Song.search_by_song(input)
-    redirect_to new_search_path 
-end 
+    respond_to do |format|
+      if @user.save
+        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.json { render :show, status: :created, location: @user }
+      else
+        format.html { render :new }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
-def edit #gets the new form 
-    @user = User.find(params[:id])
-end
+  # PATCH/PUT /users/1
+  # PATCH/PUT /users/1.json
+  def update
+    respond_to do |format|
+      if @user.update(user_params)
+        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.json { render :show, status: :ok, location: @user }
+      else
+        format.html { render :edit }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
-def update #accepts the form form edit 
-    @user = User.find(params[:id])
-    @user.update(user_params)
-    redirect_to user_path(@user)
-end
+  # DELETE /users/1
+  # DELETE /users/1.json
+  def destroy
+    @user.destroy
+    respond_to do |format|
+      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
 
-def show #add flash error validation here 
-    @user = User.find(params[:id])
-  
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_user
+      @user = User.find(params[:id])
+    end
 
-    # if @user == @current_user
-    #     render :show
-    #   else 
-    #     flash[:error] = "can only see your profile"
-    #     redirect_to users_path
-    #   end 
-end
-
-def destroy
-    user = User.find(params[:id])
-    user.destroy
-end
-
-
-
-private
-
-def user_params
-    params.require(:user).permit(:username, :password, :name)
-end
-
-    
+    # Only allow a list of trusted parameters through.
+    def user_params
+      params.require(:user).permit(:email, :password, :password_confirmation)
+    end
 end
