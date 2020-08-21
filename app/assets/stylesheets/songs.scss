@@ -44,6 +44,7 @@
         background-color: var(--blue);
       }
     }
+
 }
 
 
@@ -99,19 +100,86 @@
     }
 }
 
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 54px;
+    width: 125px;
+}
 
 .song-show-page-wrapper {
     align-self: center;
+
+
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+    @-webkit-keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+        filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+        filter: blur(0px);
+    opacity: 1;
+    }
+    }
+    @keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+        filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+        filter: blur(0px);
+    opacity: 1;
+    }
+    }
+    
 }
 
 
 .song-index-page-title {
-    padding-bottom: 50px;
+    padding-bottom: 50px;       
 }
 
 
 .song-index-page-title>h1 {
     font-size: 80px;
+
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+    @-webkit-keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+        filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+        filter: blur(0px);
+    opacity: 1;
+    }
+    }
+    @keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+        filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+        filter: blur(0px);
+    opacity: 1;
+    }
+    }
+  
+
 }
 
 .search-title {
@@ -154,6 +222,36 @@
 .bottom-index-wrapper>p {
     font-size: 2rem;
     padding-top: 33px;
+
+
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+    @-webkit-keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+        filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+        filter: blur(0px);
+    opacity: 1;
+    }
+    }
+    @keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+        filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+        filter: blur(0px);
+    opacity: 1;
+    }
+    }
+  
 }
 
 #artist-name {
@@ -242,20 +340,9 @@
     border-radius: 30px;
     font-weight: 400;
     color: white;
-    // background-color: var(--sp-green);
-    // border: none;
-    // color: var(--white);
-    // height: 20px;
-    // width: 130px;
-    // border-radius: 50px
 }
 
 .add-to-playlist:hover {
     background-color: var(--sp-hover-green);
     border: 2px solid white;
-    // border: none;
-    // color: var(--white);
-    // height: 20px;
-    // width: 130px;
-    // border-radius: 50px
 }
