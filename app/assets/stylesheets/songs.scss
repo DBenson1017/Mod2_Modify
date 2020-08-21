@@ -21,8 +21,29 @@
 
 .master-container {
     height: 100vh;
-    background-color: var(--yellow)
-    
+    // background-color: var(--yellow)
+    animation: 10000ms ease-in-out infinite color-change;
+   
+    @keyframes color-change {
+      0% {
+        background-color: var(--blue);
+      }
+      20% {
+        background-color: var(--yellow);
+      }
+      40% {
+        background-color: var(--red);
+      }
+      60% {
+        background-color: var(--orange);
+      }
+      80% {
+        background-color: var(--neon);
+      }
+      100% {
+        background-color: var(--blue);
+      }
+    }
 }
 
 
@@ -31,7 +52,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Lato', sans-serif;
-    background-color: var(--neon);
+    // background-color: var(--neon);
 }
 
 
@@ -40,7 +61,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Lato', sans-serif;
-    background-color: var(--neon);
+    // background-color: var(--neon);
 }
 
 .song-wrapper {
@@ -52,9 +73,30 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: var(--yellow);
+    // background-color: var(--yellow);
     font-family: 'Lato', sans-serif;
-    
+    animation: 10000ms ease-in-out infinite color-change;
+   
+    @keyframes color-change {
+      0% {
+        background-color: var(--blue);
+      }
+      20% {
+        background-color: var(--yellow);
+      }
+      40% {
+        background-color: var(--red);
+      }
+      60% {
+        background-color: var(--orange);
+      }
+      80% {
+        background-color: var(--neon);
+      }
+      100% {
+        background-color: var(--blue);
+      }
+    }
 }
 
 
